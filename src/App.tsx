@@ -269,9 +269,9 @@ const App = () => {
             <ServiceItem
               num="02"
               title="Licensing"
-              subtitle="Exclusive Contract"
+              subtitle="License Agreement"
               icon={<FileText className="w-6 h-6" />}
-              desc="We secure exclusive licenses and design optimal contract structures with legal review."
+              desc="We secure licensing rights and design optimized contract structures through legal review"
             />
             <ServiceItem
               num="03"
