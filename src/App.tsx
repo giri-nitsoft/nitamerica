@@ -59,7 +59,7 @@ const App = () => {
 
           {/* Mobile Nav Toggle (Simple for now) */}
           <div className="md:hidden flex items-center">
-            <a href="#contact" className="text-[10px] font-black tracking-widest px-4 py-2 border border-white/20 rounded-full">
+            <a href="#contact" className="text-[9px] font-black tracking-widest px-3 py-1.5 border border-white/20 rounded-full">
               CONTACT
             </a>
           </div>
@@ -296,22 +296,22 @@ const App = () => {
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 lg:gap-32 mb-24 md:mb-40">
           <ScrollReveal variants={fadeInRight}>
             <h2 className="text-[10vw] sm:text-[8vw] md:text-[6vw] lg:text-[72px] font-black mb-12 tracking-tighter leading-tight">Ready to<br />Connect?</h2>
-            <div className="space-y-8">
-              <div className="group p-8 bg-zinc-900/50 rounded-3xl border border-white/5 hover:border-blue-500/50 transition-all cursor-default">
+            <div className="space-y-6 md:space-y-8">
+              <div className="group p-6 md:p-8 bg-zinc-900/50 rounded-3xl border border-white/5 hover:border-blue-500/50 transition-all cursor-default">
                 <div className="flex items-center gap-3 mb-4">
                   <span className="text-blue-500 font-black tracking-widest text-[10px] uppercase">USA HQ</span>
                 </div>
-                <p className="text-2xl font-black text-white mb-2">Irvine, California</p>
-                <p className="text-gray-500 text-sm flex items-center gap-2">
+                <p className="text-xl md:text-2xl font-black text-white mb-2">Irvine, California</p>
+                <p className="text-gray-500 text-xs md:text-sm flex items-center gap-2">
                   <MapPin className="w-3 h-3" /> Strategic Sourcing & Licensing Center
                 </p>
               </div>
-              <div className="group p-8 bg-zinc-900/50 rounded-3xl border border-white/5 hover:border-purple-500/50 transition-all cursor-default">
+              <div className="group p-6 md:p-8 bg-zinc-900/50 rounded-3xl border border-white/5 hover:border-purple-500/50 transition-all cursor-default">
                 <div className="flex items-center gap-3 mb-4">
                   <span className="text-purple-500 font-black tracking-widest text-[10px] uppercase">KOREA Partner</span>
                 </div>
-                <p className="text-2xl font-black text-white mb-2">Seoul, Rep. of KOREA</p>
-                <p className="text-gray-500 text-sm flex items-center gap-2">
+                <p className="text-xl md:text-2xl font-black text-white mb-2">Seoul, Rep. of KOREA</p>
+                <p className="text-gray-500 text-xs md:text-sm flex items-center gap-2">
                   <Globe className="w-3 h-3" /> Marketing & Distribution Hub
                 </p>
               </div>
@@ -342,13 +342,13 @@ const App = () => {
                 </div>
               </div>
 
-              <div className="mt-20">
+              <div className="mt-20 overflow-hidden">
                 <p className="text-gray-500 font-black tracking-widest text-[10px] uppercase mb-6 flex items-center gap-2">
                   <Mail className="w-4 h-4" /> Business Inquiry
                 </p>
                 <a
                   href="mailto:contact@nitamerican.com"
-                  className="text-3xl md:text-5xl font-black text-white hover:text-blue-500 transition-colors underline decoration-white/10 underline-offset-[12px] decoration-1 hover:decoration-blue-500/50"
+                  className="text-xl sm:text-2xl md:text-5xl font-black text-white hover:text-blue-500 transition-colors underline decoration-white/10 underline-offset-[12px] decoration-1 hover:decoration-blue-500/50 break-all sm:break-normal"
                 >
                   contact@nitamerican.com
                 </a>
