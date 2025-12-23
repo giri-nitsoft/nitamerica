@@ -295,7 +295,7 @@ const App = () => {
       <footer id="contact" className="bg-black pt-24 md:pt-40 pb-20 border-t border-white/5">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 lg:gap-32 mb-24 md:mb-40">
           <ScrollReveal variants={fadeInRight}>
-            <h2 className="text-[10vw] sm:text-[8vw] md:text-[6vw] lg:text-[72px] font-black mb-12 tracking-tighter leading-tight">Ready to<br />Connect?</h2>
+            <h2 className="text-[10vw] sm:text-[8vw] md:text-[6vw] lg:text-6xl font-black mb-12 tracking-tighter leading-tight">Ready to<br />Connect?</h2>
             <div className="space-y-6 md:space-y-8">
               <div className="group p-6 md:p-8 bg-zinc-900/50 rounded-3xl border border-white/5 hover:border-blue-500/50 transition-all cursor-default">
                 <div className="flex items-center gap-3 mb-4">
@@ -342,13 +342,13 @@ const App = () => {
                 </div>
               </div>
 
-              <div className="mt-20 overflow-hidden">
+              <div className="mt-20">
                 <p className="text-gray-500 font-black tracking-widest text-[10px] uppercase mb-6 flex items-center gap-2">
                   <Mail className="w-4 h-4" /> Business Inquiry
                 </p>
                 <a
                   href="mailto:contact@nitamerican.com"
-                  className="text-xl sm:text-2xl md:text-5xl font-black text-white hover:text-blue-500 transition-colors underline decoration-white/10 underline-offset-[12px] decoration-1 hover:decoration-blue-500/50 break-all sm:break-normal"
+                  className="text-lg sm:text-xl md:text-3xl lg:text-[clamp(24px,3vw,48px)] font-black text-white hover:text-blue-500 transition-colors underline decoration-white/10 underline-offset-[12px] decoration-1 hover:decoration-blue-500/50 break-all lg:break-normal"
                 >
                   contact@nitamerican.com
                 </a>
