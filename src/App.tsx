@@ -174,9 +174,9 @@ const App = () => {
                       </div>
                     </div>
                     <div className="text-center w-full md:w-1/3">
-                      <div className="text-4xl md:text-5xl mb-4 drop-shadow-lg">🇰🇷</div>
-                      <div className="font-black text-xl md:text-2xl tracking-tight">KOREA</div>
-                      <div className="text-[10px] text-gray-500 tracking-widest uppercase mt-1">Seoul</div>
+                      <div className="text-4xl md:text-5xl mb-4 drop-shadow-lg">🌏</div>
+                      <div className="font-black text-xl md:text-2xl tracking-tight">ASIA</div>
+                      <div className="text-[10px] text-gray-500 tracking-widest uppercase mt-1">Strategic Hub</div>
                     </div>
                   </div>
 
@@ -308,9 +308,9 @@ const App = () => {
               </div>
               <div className="group p-6 md:p-8 bg-zinc-900/50 rounded-3xl border border-white/5 hover:border-purple-500/50 transition-all cursor-default">
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="text-purple-500 font-black tracking-widest text-[10px] uppercase">KOREA Partner</span>
+                  <span className="text-purple-500 font-black tracking-widest text-[10px] uppercase">ASIA Partner</span>
                 </div>
-                <p className="text-xl md:text-2xl font-black text-white mb-2">Seoul, Rep. of KOREA</p>
+                <p className="text-xl md:text-2xl font-black text-white mb-2">Asia-Pacific Region</p>
                 <p className="text-gray-500 text-xs md:text-sm flex items-center gap-2">
                   <Globe className="w-3 h-3" /> Marketing & Distribution Hub
                 </p>
