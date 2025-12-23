@@ -224,7 +224,7 @@ const App = () => {
               accentColor="blue"
             />
             <BrandCard
-              image="/images/lagear.png"
+              image="/images/lagear.jpg"
               category="RETRO & ATHLEISURE"
               name="LA GEAR"
               description="An iconic sneakers and athleisure brand reimagining 80s and 90s retro vibes for the modern era."
