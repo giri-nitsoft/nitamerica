@@ -148,7 +148,7 @@ const App = () => {
               <div className="space-y-10 text-lg md:text-xl text-gray-400 font-light leading-relaxed">
                 <p>
                   <span className="text-white font-black text-xl md:text-2xl block mb-4 tracking-tight">Dual HQ System</span>
-                  Our US branch, <strong className="text-white font-bold decoration-blue-500/30 decoration-4 underline-offset-4">NIT AMERICAN</strong>, sources the latest trend brands directly from Irvine, California.
+                  Our US branch, <strong className="text-white font-bold decoration-blue-500/30 decoration-4 underline-offset-4">NIT AMERICAN</strong>, sources the latest trend brands directly from Irvine, US.
                 </p>
                 <p>
                   Our strategic partner in Asia, <strong className="text-white font-bold decoration-purple-500/30 decoration-4 underline-offset-4">NITSOFT</strong>, ensures reliable execution through IT expertise and established distribution infrastructure.
@@ -301,7 +301,7 @@ const App = () => {
                 <div className="flex items-center gap-3 mb-4">
                   <span className="text-blue-500 font-black tracking-widest text-[10px] uppercase">USA HQ</span>
                 </div>
-                <p className="text-xl md:text-2xl font-black text-white mb-2">Irvine, California</p>
+                <p className="text-xl md:text-2xl font-black text-white mb-2">Irvine, US</p>
                 <p className="text-gray-500 text-xs md:text-sm flex items-center gap-2">
                   <MapPin className="w-3 h-3" /> Strategic Sourcing & Licensing Center
                 </p>
