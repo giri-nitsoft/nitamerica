@@ -217,14 +217,14 @@ const App = () => {
 
           <div className="grid md:grid-cols-2 gap-10">
             <BrandCard
-              image="https://images.unsplash.com/photo-1502680390469-be75c86b636f?q=80&w=2070&auto=format&fit=crop"
+              image="/images/Maui.jpg"
               category="SURF & STREET"
               name="MAUI & SONS"
               description="A global lifestyle brand capturing the free surf culture and street vibe of California."
               accentColor="blue"
             />
             <BrandCard
-              image="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=1974&auto=format&fit=crop"
+              image="/images/lagear.png"
               category="RETRO & ATHLEISURE"
               name="LA GEAR"
               description="An iconic sneakers and athleisure brand reimagining 80s and 90s retro vibes for the modern era."
