@@ -153,11 +153,11 @@ const App = () => {
                 </h2>
                 <div className="space-y-12 text-xl md:text-2xl text-gray-500 font-light leading-relaxed">
                   <p className="border-l-2 border-white/10 pl-8 transition-colors hover:border-accent">
-                    <span className="text-white font-black text-2xl md:text-3xl block mb-6 tracking-tight">Dual HQ System</span>
-                    Our US branch, <strong className="text-white font-bold decoration-accent/30 decoration-8 underline-offset-8">NIT AMERICA</strong>, sources the latest trend brands directly from Irvine, US.
+                    <span className="text-white font-black text-2xl md:text-3xl block mb-6 tracking-tight">Two-Core Global Operation</span>
+                    <strong className="text-white font-bold decoration-accent/30 decoration-8 underline-offset-8">NIT AMERICA</strong> is the US-based entity leading brand sourcing, licensing negotiations, and strategic partnerships directly from Irvine, California.
                   </p>
                   <p className="border-l-2 border-white/10 pl-8">
-                    Our strategic partner in Korea, <strong className="text-white font-bold decoration-purple-500/30 decoration-8 underline-offset-8">NITSOFT</strong>, ensures reliable execution through IT expertise and established distribution infrastructure.
+                    <strong className="text-white font-bold decoration-purple-500/30 decoration-8 underline-offset-8">NITSOFT</strong> serves as the execution core for the Korean market, driving localized commerce, IT-powered messaging, and scalable distribution infrastructure.
                   </p>
                 </div>
               </ScrollReveal>
@@ -308,20 +308,20 @@ const App = () => {
               <div className="space-y-8">
                 <div className="group glass-card p-10 rounded-[2rem] hover:glow-border-cyan transition-all cursor-default relative overflow-hidden">
                   <div className="flex items-center gap-4 mb-6">
-                    <span className="text-accent font-black tracking-[0.4em] text-[11px] uppercase">USA HQ</span>
+                    <span className="text-accent font-black tracking-[0.4em] text-[11px] uppercase">Global Sourcing HQ</span>
                   </div>
-                  <p className="text-3xl md:text-4xl font-black text-white mb-3">Irvine, US</p>
+                  <p className="text-3xl md:text-4xl font-black text-white mb-3">Irvine, California</p>
                   <p className="text-gray-500 text-sm md:text-base flex items-center gap-3">
-                    <MapPin className="w-4 h-4" /> Strategic Sourcing & Licensing Center
+                    <MapPin className="w-4 h-4" /> Brand Discovery & License Acquisition
                   </p>
                 </div>
                 <div className="group glass-card p-10 rounded-[2rem] hover:glow-border-purple transition-all cursor-default relative overflow-hidden">
                   <div className="flex items-center gap-4 mb-6">
-                    <span className="text-purple-500 font-black tracking-[0.4em] text-[11px] uppercase">KOREA Partner</span>
+                    <span className="text-purple-500 font-black tracking-[0.4em] text-[11px] uppercase">Market Execution Center</span>
                   </div>
-                  <p className="text-3xl md:text-4xl font-black text-white mb-3">Korea Hub</p>
+                  <p className="text-3xl md:text-4xl font-black text-white mb-3">Seoul, South Korea</p>
                   <p className="text-gray-500 text-sm md:text-base flex items-center gap-3">
-                    <Globe className="w-4 h-4" /> Marketing & Distribution Hub
+                    <Globe className="w-4 h-4" /> Omni-channel Distribution & Localization
                   </p>
                 </div>
               </div>
