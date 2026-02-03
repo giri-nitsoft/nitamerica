@@ -1,15 +1,27 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #000000;
-  --color-primary-dark: #111111;
-  --color-accent: #3b82f6;
+  --color-primary: #09090b;
+  --color-primary-dark: #050505;
+  --color-accent: #91B3F0;
+  --color-cyan-glow: #88b4f5;
+  --color-purple-glow: #a855f7;
+  --color-ethena-blue: #91B3F0;
+  --color-ethena-slate: #09090b;
 }
 
 @layer base {
   body {
-    @apply bg-black text-white antialiased;
-    font-family: 'Inter', sans-serif;
+    background-color: #09090b;
+    @apply text-white antialiased;
+    font-family: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  .section-container {
+    height: 100vh;
+    overflow-y: auto;
+    scroll-behavior: smooth;
   }
 }
 
@@ -20,29 +32,177 @@
   }
 
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500;
+    background: linear-gradient(90deg, #a4afc2 -1.49%, #e7effc 19.18%, #bfd4fa 60.52%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
-  .animate-slow-zoom {
-    animation: slowZoom 20s infinite alternate linear;
+  .glass-card {
+    background: rgba(17, 17, 33, 0.4);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgba(145, 179, 240, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  .glass-card-hover {
+    @apply hover:bg-white/[0.08] hover:border-white/[0.2] transition-all duration-500;
+  }
+
+  .glow-border-cyan {
+    box-shadow: 0 0 20px -5px rgba(145, 179, 240, 0.4);
+    border-color: rgba(145, 179, 240, 0.5);
+  }
+
+  .glow-border-purple {
+    box-shadow: 0 0 20px -5px rgba(168, 85, 247, 0.3);
+    border-color: rgba(168, 85, 247, 0.4);
+  }
+
+  .global-frame {
+    @apply fixed inset-0 pointer-events-none z-[100] border-[1px] border-white/5;
+    box-shadow: inset 0 0 150px rgba(145, 179, 240, 0.08);
   }
 
   .noise-bg {
     position: fixed;
-    top: -50%;
-    left: -50%;
-    right: -50%;
-    bottom: -50%;
-    width: 200%;
-    height: 200%;
-    background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url('https://grainy-gradients.vercel.app/noise.svg');
     background-repeat: repeat;
     opacity: .05;
     visibility: visible;
     pointer-events: none;
-    z-index: 100;
-    animation: noise 0.2s infinite;
+    z-index: 99;
+    mix-blend-mode: overlay;
+  }
+
+  .shadow-soft {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+  }
+
+  /* Blueprint Utilities - More Muted */
+  .blueprint-grid {
+    background-image:
+      linear-gradient(rgba(145, 179, 240, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(145, 179, 240, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    background-position: center center;
+  }
+
+  .blueprint-grid-fine {
+    background-image:
+      linear-gradient(rgba(145, 179, 240, 0.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(145, 179, 240, 0.02) 1px, transparent 1px);
+    background-size: 15px 15px;
+  }
+
+  .blueprint-corner {
+    position: relative;
+  }
+
+  .blueprint-corner::before,
+  .blueprint-corner::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    pointer-events: none;
+    border-color: rgba(255, 255, 255, 0.2);
+    z-index: 10;
+  }
+
+  /* Top Left & Right */
+  .corner-tl::before {
+    top: 0;
+    left: 0;
+    border-top: 1px solid;
+    border-left: 1px solid;
+  }
+
+  .corner-tr::after {
+    top: 0;
+    right: 0;
+    border-top: 1px solid;
+    border-right: 1px solid;
+  }
+
+  /* Bottom Left & Right */
+  .corner-bl::before {
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+  }
+
+  .corner-br::after {
+    bottom: 0;
+    right: 0;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+  }
+
+  .hud-tag {
+    @apply text-[9px] font-mono tracking-[0.2em] uppercase px-2 py-0.5 border border-white/10 bg-white/5 text-white/40;
+  }
+
+  .mono-technical {
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  }
+
+  /* Scanner Effect */
+  @keyframes scan {
+    from {
+      transform: translateY(-100%);
+    }
+
+    to {
+      transform: translateY(300%);
+    }
+  }
+
+  .scanner-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to bottom,
+        transparent,
+        rgba(14, 165, 233, 0.05) 40%,
+        rgba(14, 165, 233, 0.2) 50%,
+        rgba(14, 165, 233, 0.05) 60%,
+        transparent);
+    animation: scan 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    pointer-events: none;
+    z-index: 5;
+  }
+
+  .scanner-line-purple {
+    background: linear-gradient(to bottom,
+        transparent,
+        rgba(168, 85, 247, 0.05) 40%,
+        rgba(168, 85, 247, 0.2) 50%,
+        rgba(168, 85, 247, 0.05) 60%,
+        transparent);
+  }
+
+  .text-glow-cyan {
+    text-shadow: 0 0 15px rgba(14, 165, 233, 0.6), 0 0 30px rgba(14, 165, 233, 0.2);
+  }
+
+  .text-glow-purple {
+    text-shadow: 0 0 15px rgba(168, 85, 247, 0.6), 0 0 30px rgba(168, 85, 247, 0.2);
+  }
+
+  .viewport-label {
+    @apply fixed text-[9px] font-mono tracking-[0.3em] uppercase text-white/20 z-[120] pointer-events-none;
+  }
+
+  .scroll-progress-bar {
+    @apply fixed top-0 left-0 h-[2px] bg-gradient-to-r from-cyan-500 to-purple-500 z-[130] transition-all duration-300;
   }
 }
 
@@ -52,60 +212,64 @@
   }
 
   10% {
-    transform: translate(-5%, -5%)
+    transform: translate(-1%, -1%)
   }
 
   20% {
-    transform: translate(-10%, 5%)
+    transform: translate(-2%, 1%)
   }
 
   30% {
-    transform: translate(5%, -10%)
+    transform: translate(1%, -2%)
   }
 
   40% {
-    transform: translate(-5%, 15%)
+    transform: translate(-1%, 2%)
   }
 
   50% {
-    transform: translate(-10%, 5%)
+    transform: translate(-2%, 1%)
   }
 
   60% {
-    transform: translate(15%, 0)
+    transform: translate(2%, 0)
   }
 
   70% {
-    transform: translate(0, 10%)
+    transform: translate(0, 1%)
   }
 
   80% {
-    transform: translate(-15%, 0)
+    transform: translate(-2%, 0)
   }
 
   90% {
-    transform: translate(10%, 5%)
+    transform: translate(1%, 1%)
   }
 
   100% {
-    transform: translate(5%, 0)
-  }
-}
-
-@keyframes slowZoom {
-  0% {
-    transform: scale(1);
-  }
-
-  100% {
-    transform: scale(1.1);
+    transform: translate(1%, 0)
   }
 }
 
 html {
   scroll-behavior: smooth;
+  background-color: black;
 }
 
-a {
-  text-decoration: none;
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333;
 }
