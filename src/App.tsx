@@ -78,9 +78,9 @@ const App = () => {
               initial={{ scale: 1.25 }}
               animate={{ scale: 1 }}
               transition={{ duration: 15, repeat: Infinity, repeatType: "mirror", ease: "linear" }}
-              src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?q=80&w=2070&auto=format&fit=crop"
-              className="w-full h-full object-cover opacity-60 grayscale"
-              alt="City Connection"
+              src="/images/hero-la.png"
+              className="w-full h-full object-cover opacity-50 grayscale contrast-125"
+              alt="LA Skyline"
             />
             {/* Electric Glow Overlays */}
             <div className="absolute top-1/2 left-0 w-1/2 h-px bg-cyan-500/20 blur-md z-20" />
